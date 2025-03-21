@@ -4,7 +4,7 @@ variable "cidr" {
 
 resource "aws_key_pair" "mykey" {
   key_name   = "sunny-terraform"  # Replace with your desired key name
-  public_key = file("")  # Replace with the path to your public key file
+  public_key = file("c:/Users/ramag/OneDrive/Desktop/backen")  # Replace with the path to your public key file
 }
 
 resource "aws_vpc" "myvpc1" {
