@@ -1,0 +1,27 @@
+notes
+to create the key pair bu using cli
+# Ans:-ssh-keygen -t rsa -b 4096 -f ~/.ssh/terraform-sunny
+to see the key pair is generated or not 
+# ls ~/.ssh/terraform-sunny.pub
+# output:
+PS C:\Users\ramag\OneDrive\Desktop\vpc> ls ~/.ssh/terraform-sunny.pub
+
+
+    Directory: C:\Users\ramag\.ssh
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        21-03-2025     19:04            738 terraform-sunny.pub
+
+
+path will look like this 
+
+public_key = file("C:/Users/ramag/.ssh/terraform-sunny.pub") # this is pub
+
+for create private no need to add .pub
+
+
+
+
+
